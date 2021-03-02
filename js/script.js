@@ -16,17 +16,17 @@ function getAkanName () {
   
     let myGenderValue = getGender();
   
-    console.log(myGenderValue);
+    console.log(`My gender value: ${myGenderValue}`);
   
-    // validation functions
-    function monthValidator () {
-      if (monthOfBirth < 1 || monthOfBirth > 12) {
-        return false;
-      } else {
-        return true;
-      }
-    }
-  
+      // validation functions
+      function monthValidator () {
+        if (monthOfBirth < 1 || monthOfBirth > 12) {
+          return false;
+        } else {
+          return true;
+        }
+      } 
+   
     function dayValidator () {
       if (monthOfBirth === 2 && Number(yearOfBirth)%4 === 0) {
         if (dayOfBirth > 28 || dayOfBirth < 1) {
@@ -46,7 +46,7 @@ function getAkanName () {
     }
   
     //validation variables
-    let monthValid = monthValidator();
+    let isMonthValid = monthValidator(monthOfBirth);
     let dayValid = dayValidator();
   
     //formula to determine day of birth (Sunday = 1, Monday = 2)etc..
@@ -63,7 +63,7 @@ function getAkanName () {
     ];
   
     //condition statement that validates input
-    if (myGenderValue == "male" && monthValid && dayValid){
+    if (myGenderValue == "male" && isMonthValid && dayValid){
       switch (dayOfWeekNumber) {
         case 1:
           document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + maleAkanNames[0];
@@ -159,3 +159,4 @@ function getAkanName () {
         alert("You entered invalid month or day");
       }
     }
+
