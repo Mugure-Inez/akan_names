@@ -120,7 +120,7 @@ function getAkanName () {
           document.getElementById('result').textContent = "You were born on a Monday: your Akan name is " + femaleAkanNames[1];
           document.getElementById('display-name').textContent = "Here is your Akan name: ";
           return false;
-          alert("Kwadwo");
+          // alert("Kwadwo");
           break;
         case 3:
           document.getElementById('result').textContent = "You were born on a Tuesday: your Akan name is " + femaleAkanNames[2];
