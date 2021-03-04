@@ -55,7 +55,7 @@ function getAkanName () {
   
     //creating arrays of Akan names for males and females
     let maleAkanNames = [
-      "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Kwaku", "Yaw", "Kofi", "Kwame"
+      "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"
     ];
   
     let femaleAkanNames = [
@@ -100,11 +100,11 @@ function getAkanName () {
           document.getElementById('display-name').textContent = "Here is your Akan name: ";
           return false;
           break;
-        // case 0:
-        //   document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + maleAkanNames[0];
-        //   document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        //   return false;
-        //   break;
+        case 0:
+          document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + maleAkanNames[0];
+          document.getElementById('display-name').textContent = "Here is your Akan name: ";
+          return false;
+          break;
         default:
           alert("mmh no Akan name for you");
   
@@ -147,11 +147,11 @@ function getAkanName () {
           document.getElementById('display-name').textContent = "Here is your Akan name: ";
           return false;
           break;
-        // case 0:
-        //   document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + femaleAkanNames[0];
-        //   document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        //   return false;
-        //   break;
+        case 0:
+          document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + femaleAkanNames[0];
+          document.getElementById('display-name').textContent = "Here is your Akan name: ";
+          return false;
+          break;
         default:
           alert("mmh no Akan name for you");
         }
