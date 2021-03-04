@@ -100,11 +100,11 @@ function getAkanName () {
           document.getElementById('display-name').textContent = "Here is your Akan name: ";
           return false;
           break;
-        case 0:
-          document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + maleAkanNames[0];
-          document.getElementById('display-name').textContent = "Here is your Akan name: ";
-          return false;
-          break;
+        // case 0:
+        //   document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + maleAkanNames[0];
+        //   document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        //   return false;
+        //   break;
         default:
           alert("mmh no Akan name for you");
   
@@ -147,11 +147,11 @@ function getAkanName () {
           document.getElementById('display-name').textContent = "Here is your Akan name: ";
           return false;
           break;
-        case 0:
-          document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + femaleAkanNames[0];
-          document.getElementById('display-name').textContent = "Here is your Akan name: ";
-          return false;
-          break;
+        // case 0:
+        //   document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + femaleAkanNames[0];
+        //   document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        //   return false;
+        //   break;
         default:
           alert("mmh no Akan name for you");
         }
